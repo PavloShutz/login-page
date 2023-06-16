@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Sign up</title>
 </head>
 <body>
@@ -19,21 +20,6 @@
         <input type="submit">
     </form>
 
-    <script>
-        var authForm = document.forms.auth;
-        var tg = window.Telegram.WebApp;
-        function sendDataToBot(event) {
-            var formData =  new FormData(authForm);
-            let data = {
-                name: formData.get("name"),
-                phone: formData.get("phone")
-            }
-            console.log(data);
-            tg.sendData(JSON.stringify(data));
-            tg.close();
-            event.preventDefault();
-        }
-        authForm.addEventListener("submit", sendDataToBot);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
