@@ -1,35 +1,48 @@
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
 form {
-    max-width: 400px;
-    margin: 0 auto;
+	max-width: 400px;
+	margin: 0 auto;
 }
 
 label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
 }
 
 input[type="text"],
-input[type="tel"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
+input[type="tel"],
+select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 16px;
 }
 
-input[type="submit"] {
-    background-color: #fdc20d;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+input[type="button"] {
+	background-color: #fdc20d;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
 }
 
-input[type="submit"]:hover {
-    background-color: #e2c168;
+input[type="button"]:hover {
+	background-color: #e2c168;
+}
+
+.phone-number {
+	display: flex;
+}
+
+#error {
+	color: red;
 }
