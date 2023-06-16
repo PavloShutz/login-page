@@ -7,17 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Sign up</title>
 </head>
 <body>
     <form name="auth">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" placeholder="Your nice username" autocomplete>
-
         <label for="phone">Phone</label>
-        <input type="tel" name="phone" id="phone" placeholder="Your phone" autocomplete>
-
-        <input type="submit">
+				<div class="phone-number">
+					<select id="country-code" style="width: fit-content;" disabled>
+						<option>+380</option>
+					</select>
+					<input type="tel" name="phone" id="phone" placeholder="XX-XXX-XX-XX" autocomplete>
+				</div>
+				<div id="error"></div><br>
+        <input type="button" value="Sign up!" id="signup">
     </form>
 
     <script src="script.js"></script>
