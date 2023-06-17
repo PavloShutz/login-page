@@ -2,9 +2,38 @@ html {
 	font-family: 'Roboto', sans-serif;
 }
 
+body {
+	background-image: linear-gradient(
+  290deg,
+  hsl(41deg 100% 56%) 0%,
+  hsl(42deg 100% 55%) 17%,
+  hsl(43deg 100% 55%) 25%,
+  hsl(44deg 100% 54%) 31%,
+  hsl(46deg 100% 54%) 37%,
+  hsl(47deg 100% 53%) 42%,
+  hsl(48deg 100% 53%) 47%,
+  hsl(49deg 100% 52%) 53%,
+  hsl(50deg 100% 51%) 58%,
+  hsl(51deg 100% 51%) 63%,
+  hsl(52deg 100% 50%) 69%,
+  hsl(53deg 100% 50%) 75%,
+  hsl(54deg 100% 50%) 83%,
+  hsl(55deg 100% 50%) 100%
+);
+	background-attachment: fixed
+}
+
 form {
+	background-color: #f5f3f3;
+	border-radius: 20px;
+	padding: 30px;
 	max-width: 400px;
 	margin: 0 auto;
+}
+
+#signup-title {
+	text-align: center;
+	font-size: 46px;
 }
 
 label {
@@ -22,17 +51,17 @@ select {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
-	font-size: 16px;
+	font-size: 25px;
 }
 
 input[type="button"] {
 	background-color: #fdc20d;
 	color: white;
-	padding: 10px 20px;
+	padding: 15px 140px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 32px;
 }
 
 input[type="button"]:hover {
