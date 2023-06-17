@@ -8,11 +8,11 @@ function sendDataToBot(event) {
     let error = document.getElementById("error");
     if (name.length < 5)
     {
-        error.innerHTML = "Name must contain at least 5 characters!"
+        error.innerHTML = "В імені має бути як мінімум 5 символів!"
         return ;
     }
     if (phone.length != 9) {
-        error.innerHTML = "Phone must contain 9 digits!"
+        error.innerHTML = "Номер телефону має складатися з 9 цифр!"
         return ;
     }
     let data = {
